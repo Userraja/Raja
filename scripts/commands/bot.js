@@ -1,4 +1,4 @@
-
+//File created by Mohammad Nayan and fully coded by Nayan
 
 const axios = require('axios');
 
@@ -54,20 +54,20 @@ module.exports = {
 
       if (!msg) {
         const tl = [
-  "à¦†à¦¹ à¦¶à§à¦¨à¦¾ à¦†à¦®à¦¾à¦° à¦¤à§‹à¦®à¦¾à¦° à¦…à¦²à¦¿à¦¤à§‡ à¦—à¦²à¦¿à¦¤à§‡ à¦‰à¦®à§à¦®à¦¾à¦¹ðŸ˜‡ðŸ˜˜",
-  " à¦•à¦¿ à¦—à§‹ à¦¸à§‹à¦¨à¦¾ à¦†à¦®à¦¾à¦•à§‡ à¦¡à¦¾à¦•à¦› à¦•à§‡à¦¨à§‹",
-  "à¦¬à¦¾à¦° à¦¬à¦¾à¦° à¦†à¦®à¦¾à¦•à§‡ à¦¡à¦¾à¦•à¦¸ à¦•à§‡à¦¨ðŸ˜¡",
-  "à¦†à¦¹ à¦¶à§‹à¦¨à¦¾ à¦†à¦®à¦¾à¦° à¦†à¦®à¦¾à¦•à§‡ à¦à¦¤à§‹ à¦¡à¦¾à¦•à§à¦¤à¦¾à¦›à§‹ à¦•à§‡à¦¨à§‹ à¦†à¦¸à§‹ à¦¬à§à¦•à§‡ à¦†à¦¶à§‹ðŸ¥±",
-  "à¦¹à§à¦® à¦œà¦¾à¦¨ à¦¤à§‹à¦®à¦¾à¦° à¦…à¦‡à¦–à¦¾à¦¨à§‡ à¦‰à¦®à§à¦®à¦®à¦¾à¦¹ðŸ˜·ðŸ˜˜",
-  " à¦†à¦¸à¦¸à¦¾à¦²à¦¾à¦®à§ à¦†à¦²à¦¾à¦‡à¦•à§à¦® à¦¬à¦²à§‡à¦¨ à¦†à¦ªà¦¨à¦¾à¦° à¦œà¦¨à§à¦¯ à¦•à¦¿ à¦•à¦°à¦¤à§‡ à¦ªà¦¾à¦°à¦¿",
-  "à¦†à¦®à¦¾à¦•à§‡ à¦à¦¤à§‹ à¦¨à¦¾ à¦¡à§‡à¦•à§‡ à¦¬à¦¸ à¦¨à§Ÿà¦¨à¦•à§‡ à¦à¦•à¦Ÿà¦¾ à¦—à¦« à¦¦à§‡ ðŸ™„",
+  "আহ শুনা আমার তোমার অলিতে গলিতে উম্মাহ😇😘",
+  " কি গো সোনা আমাকে ডাকছ কেনো",
+  "বার বার আমাকে ডাকস কেন😡",
+  "আহ শোনা আমার আমাকে এতো ডাক্তাছো কেনো আসো বুকে আশো🥱",
+  "হুম জান তোমার অইখানে উম্মমাহ😷😘",
+  " আসসালামু আলাইকুম বলেন আপনার জন্য কি করতে পারি",
+  "আমাকে এতো না ডেকে বস নয়নকে একটা গফ দে 🙄",
   "jang hanga korba",
-  "jang bal falabaðŸ™‚"
+  "jang bal falaba🙂"
 ];
         var name = await Users.getNameUser(events.senderID);
         var rand = tl[Math.floor(Math.random() * tl.length)];
         return nayan.reply({ 
-              body: `â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â\nâ•°âž¤ ðŸ‘¤ ðƒðžðšð« ã€Ž${name}ã€,\nâ•°âž¤ ðŸ—£ï¸ ${rand}\nâ•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€âž¤`, 
+              body: `╭────────────❍\n╰➤ 👤 𝐃𝐞𝐚𝐫 『${name}』,\n╰➤ 🗣️ ${rand}\n╰─────────────────➤`, 
               mentions: [{ tag: name, id: events.senderID }] }, events.threadID, (error, info) => {
           if (error) {
             return nayan.reply('An error occurred while processing your request. Please try again later.', events.threadID, events.messageID);
@@ -117,10 +117,10 @@ module.exports = {
         const ask = response.data.data.ask;
         const ans = response.data.data.ans;
         if (replyMessage.includes("already")){
-          return nayan.reply(`ðŸ“Your Data Already Added To Database\n1ï¸âƒ£ASK: ${ask}\n2ï¸âƒ£ANS: ${ans}`, events.threadID, events.messageID)
+          return nayan.reply(`📝Your Data Already Added To Database\n1️⃣ASK: ${ask}\n2️⃣ANS: ${ans}`, events.threadID, events.messageID)
         }
 
-        return nayan.reply({ body: `ðŸ“Your Data Added To Database Successfully\n1ï¸âƒ£ASK: ${ask}\n2ï¸âƒ£ANS: ${ans}` }, events.threadID, events.messageID);
+        return nayan.reply({ body: `📝Your Data Added To Database Successfully\n1️⃣ASK: ${ask}\n2️⃣ANS: ${ans}` }, events.threadID, events.messageID);
       }
       else if (msg.startsWith("askinfo")) {
         const question = msg.replace("askinfo", "").trim();
@@ -138,7 +138,7 @@ module.exports = {
         }
 
         const replyMessage = `Info for "${question}":\n\n` +
-          answers.map((answer, index) => `ðŸ“Œ ${index + 1}. ${answer}`).join("\n") +
+          answers.map((answer, index) => `📌 ${index + 1}. ${answer}`).join("\n") +
           `\n\nTotal answers: ${answers.length}`;
 
         return nayan.reply({ body: replyMessage }, events.threadID, events.messageID);
@@ -147,19 +147,19 @@ module.exports = {
         const cmd = this.config.name;
         const prefix = global.config.PREFIX;
         const helpMessage = `
-        ðŸŒŸ **Available Commands:**
+        🌟 **Available Commands:**
 
-        1. ðŸ¤– ${prefix}${cmd} askinfo [question]: Get information about a specific question.
+        1. 🤖 ${prefix}${cmd} askinfo [question]: Get information about a specific question.
 
-        2. ðŸ“š ${prefix}${cmd} teach ask=[question]&ans=[answer]: Teach the bot a new question and answer pair.
+        2. 📚 ${prefix}${cmd} teach ask=[question]&ans=[answer]: Teach the bot a new question and answer pair.
 
-        3. âŒ ${prefix}${cmd} delete ask=[question]&ans=[answer]: Delete a specific question and answer pair. (Admin only)
+        3. ❌ ${prefix}${cmd} delete ask=[question]&ans=[answer]: Delete a specific question and answer pair. (Admin only)
 
-        4. ðŸ“Š ${prefix}${cmd} info: Get the total number of questions and answers.
+        4. 📊 ${prefix}${cmd} info: Get the total number of questions and answers.
 
-        5. ðŸ‘‹ ${prefix}${cmd} hi: Send a random greeting.
+        5. 👋 ${prefix}${cmd} hi: Send a random greeting.
 
-        âš¡ Use these commands to interact with the bot effectively!
+        ⚡ Use these commands to interact with the bot effectively!
             `;
 
         return nayan.reply({ body: helpMessage }, events.threadID, events.messageID);
