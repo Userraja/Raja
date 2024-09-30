@@ -7,7 +7,7 @@ module.exports = {
     name: "bot",
     version: "1.0.0",
     permission: 0,
-    credits: "ome",
+    credits: "OME",
     description: "talk with bot",
     prefix: 'awto',
     category: "talk",
@@ -93,7 +93,7 @@ module.exports = {
         var name = await Users.getNameUser(events.senderID);
         var rand = tl[Math.floor(Math.random() * tl.length)];
         return nayan.reply({ 
-              body: `❍\n╰➤ 👤 ome BOSS 『${name}』,\n╰➤ 🗣️ ${rand}\n╰─────────────────➤`, 
+              body: `❍\n╰ কিরে মাগির পোলা👤 𝐃𝐞𝐚𝐫 『${name}』,\n╰ 🗣️ ${rand}\n
               mentions: [{ tag: name, id: events.senderID }] }, events.threadID, (error, info) => {
           if (error) {
             return nayan.reply('An error occurred while processing your request. Please try again later.', events.threadID, events.messageID);
